@@ -1,0 +1,33 @@
+form {
+  text-align: center;
+  width: 70%;
+  margin: 2rem auto 0 auto;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+  color: rgb(212, 207, 207);
+  font-weight: 500;
+}
+
+.form {
+  width: 50%;
+}
+
+.endereco {
+  width: 70%;
+}
+
+.buttons {
+  width: 100%;
+  margin-top: 1%;
+  text-align: start;
+}
+
+button {
+  margin-right: 0.5rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}

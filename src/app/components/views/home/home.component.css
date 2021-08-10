@@ -1,0 +1,12 @@
+.home {
+    width: 95%;
+    margin: 1rem auto;
+}
+
+.texto-home {
+    text-decoration: none;
+}
+
+.texto-home a {
+    color: chartreuse;
+}

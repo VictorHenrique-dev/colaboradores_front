@@ -1,0 +1,70 @@
+<form>
+  <h1>CADASTRANDO NOVO COLABORADOR</h1>
+
+  <mat-form-field appearance="outline" class="form">
+    <mat-label>Nome</mat-label>
+    <input
+      matInput
+      [(ngModel)]="Colaborador.nome"
+      type="text"
+      name="nome"
+      placeholder="Digite o nome do colaborador"
+    />
+  </mat-form-field>
+  <mat-form-field appearance="outline" class="form">
+    <mat-label>Sobrenome</mat-label>
+    <input
+      matInput
+      [(ngModel)]="Colaborador.sobrenome" 
+      type="text"
+      name="sobrenome"
+      placeholder="Digite o sobrenome do colaborador"
+    />
+  </mat-form-field>
+  <mat-form-field appearance="outline" class="form">
+    <mat-label>Cargo</mat-label>
+    <input
+      matInput
+      [(ngModel)]="Colaborador.cargo"
+      type="text"
+      name="cargo"
+      placeholder="Digite o cargo do colaborador"
+    />
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="form">
+    <mat-label>Data de Nascimento</mat-label>
+    <input
+      matInput
+      [(ngModel)]="Colaborador.dataDeNascimento"
+      type="text"
+      name="dataDeNascimento"
+      placeholder="Digite a data de nascimento do colaborador"
+    />
+    <mat-hint>dd/MM/yyyy</mat-hint>
+  </mat-form-field>
+  <mat-form-field appearance="outline" class="endereco">
+    <mat-label>Endereço</mat-label>
+    <input
+      matInput [(ngModel)]="Colaborador.endereco"
+      type="text"
+      name="endereco"
+      placeholder="Digite a rua onde o colaborador mora"
+    />
+    <mat-hint>Exemplo: R. Miguel Casagrande, 200 - Freguesia do Ó, São Paulo - SP, 02714-000</mat-hint>
+  </mat-form-field>
+
+  <div class="buttons">
+    <button
+      (click)="create()"
+      class="mat-elevation-z8"
+      mat-stroked-button
+      color="primary"
+    >
+      CRIAR
+    </button>
+    <button (click)="cancel()" class="mat-elevation-z8" mat-stroked-button color="warn">
+      CANCELAR
+    </button>
+  </div>
+</form>

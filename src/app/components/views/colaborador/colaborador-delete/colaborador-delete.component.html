@@ -1,0 +1,59 @@
+<form>
+    <h1>DELETANDO COLABORADOR</h1>
+  
+    <mat-form-field appearance="outline" class="form">
+      <mat-label>Nome</mat-label>
+      <input
+        matInput [(ngModel)]="colaborador.nome"
+        type="text"
+        name="nome" disabled
+      />
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="form">
+      <mat-label>Sobrenome</mat-label>
+      <input
+        matInput [(ngModel)]="colaborador.sobrenome"
+        type="text"
+        name="sobrenome" disabled
+      />
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="form">
+      <mat-label>Cargo</mat-label>
+      <input
+        matInput [(ngModel)]="colaborador.cargo"
+        type="text"
+        name="cargo" disabled
+      />
+    </mat-form-field>
+  
+    <mat-form-field appearance="outline" class="form">
+      <mat-label>Data de Nascimento</mat-label>
+      <input
+        matInput [(ngModel)]="colaborador.dataDeNascimento"
+        type="text"
+        name="dataDeNascimento" disabled
+      />
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="endereco">
+      <mat-label>Endereço</mat-label>
+      <input
+        matInput [(ngModel)]="colaborador.endereco"
+        type="text"
+        name="endereco" disabled
+      />
+    </mat-form-field>
+  
+    <div class="buttons">
+      <button (click)="delete()"
+        class="mat-elevation-z8"
+        mat-stroked-button
+        color="primary"
+      >
+        DELETAR
+      </button>
+      <button (click)="cancel()" class="mat-elevation-z8" mat-stroked-button color="warn">
+        CANCELAR
+      </button>
+    </div>
+  </form>
+  

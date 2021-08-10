@@ -1,0 +1,59 @@
+<form>
+    <h1>EDITAR COLABORADOR</h1>
+  
+    <mat-form-field appearance="outline" class="form">
+      <mat-label>Nome</mat-label>
+      <input
+        matInput [(ngModel)]="colaborador.nome"
+        type="text"
+        name="nome"
+      />
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="form">
+      <mat-label>Sobrenome</mat-label>
+      <input
+        matInput [(ngModel)]="colaborador.sobrenome"
+        type="text"
+        name="sobrenome"
+      />
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="form">
+      <mat-label>Cargo</mat-label>
+      <input
+        matInput [(ngModel)]="colaborador.cargo"
+        type="text"
+        name="cargo"
+      />
+    </mat-form-field>
+  
+    <mat-form-field appearance="outline" class="form">
+      <mat-label>Data de Nascimento</mat-label>
+      <input
+        matInput [(ngModel)]="colaborador.dataDeNascimento"
+        type="text"
+        name="dataDeNascimento"
+      />
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="endereco">
+      <mat-label>Endereço</mat-label>
+      <input
+        matInput [(ngModel)]="colaborador.endereco"
+        type="text"
+        name="endereco"
+      />
+    </mat-form-field>
+  
+    <div class="buttons">
+      <button (click)="update()"
+        class="mat-elevation-z8"
+        mat-stroked-button
+        color="primary"
+      >
+        EDITAR
+      </button>
+      <button (click)="cancel()" class="mat-elevation-z8" mat-stroked-button color="warn">
+        CANCELAR
+      </button>
+    </div>
+  </form>
+  
